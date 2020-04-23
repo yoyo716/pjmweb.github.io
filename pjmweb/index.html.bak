@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>P.J. Metal House 2000</title>
+    <title>RENDERED</title>
 
     <script src="https://use.typekit.net/kxf0iwn.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -18,8 +18,8 @@
     <!-- Site Header -->
     <header>
       <a class="site-logo">
-          <img class="site-logo-white" src="images/PJ-Metal-logo_wh.png">
-          <img class="site-logo-dark" src="images/PJ-Metal-logo_color.png">
+          <img class="site-logo-white" src="images/logo-white.png">
+          <img class="site-logo-dark" src="images/logo-dark.png">
       </a>
       <button class="site-nav-open">
           <img src="images/menu-hamburger.png">
@@ -30,9 +30,9 @@
             </button>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#gallery">Services</a></li>
-                <li><a href="#tickets">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tickets">Tickets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -45,24 +45,28 @@
         <!-- Hero -->
         <section class="hero">
             <div class="hero-content">
-                <h2 class="hero-leadin"><span></span></h2>
-                <h1 class="hero-title">Metal Expert</h1>
-                <h3 class="hero-date"><span></span></h3>
+                <h2 class="hero-leadin">An Exhibition <span>of Digital Originals</span></h2>
+                <h1 class="hero-title">Rendered</h1>
+                <h3 class="hero-date">Nov 14 &mdash; 21, 2017, <span>San Francisco</span></h3>
             </div>
             <a href="#" class="hero-arrow">
                 <img src="images/down-arrow.png" class="hero-arrow"/>
-            </a>          
-			<img src="images/home_bg_ad.jpg">    
-		</section>
+            </a>
+            <video autoplay loop poster="images/paintwave.jpg">
+                <source src="videos/paintwave.mp4" type="video/mp4; codecs=&quot;h264,aac&quot;">
+                <source src="videos/paintwave.webm" type="video/webm; codecs=&quot;vp8,vorbis&quot;">
+                <source src="videos/paintwave.ogg" type="video/ogg; codecs=&quot;theora,vorbis&quot;">
+            </video>
+        </section>
 
         <!-- Stamp -->
-        <img id="stamp" src="images/stamp_wh.png"/>
+        <img id="stamp" src="images/stamp.png"/>
 
 
         <!-- Intro -->
         <section class="intro" id="intro">
             <div class="intro-text">
-                <p>Wholesaler and Retailer of Stainless Steel sheets/ Plates/ Profiles Job Shop Services including Laser/ Plasma/ Flame Cuttings, Shearing, Bending, Rolling, Welding and Assembly according to your requirements.</p>
+                <p>If digital artwork can be endlessly reworked, at what point does it become a finished piece? In Rendered, today’s pixel visionaries explore the event horizon between artistic process and rendered reality.</p>
             </div>
         </section>
 
@@ -116,9 +120,9 @@
                 </li>
             </ul>
             <div class="footer-info">
-                <p class="footer-credit">Website design by <a href="http://www.seescopestudio.com" target="_blank">See Scope Design Studio</a></p>
-                <p class="footer-disclaimer">12/1-2 Moo 10, Teparak Rd. Km. 15, Bangpla, <br> Bangplee, Samutprakarn 10540, Thailand <br> Tel : 0-2752-3300 (Auto) 0-2312-1102, 0-2312-2413 <br> Fax : 0-2752-4164</p>
-                <p class="footer-legal">&copy; 2020 P.J.METAL HOUSE CO.,LTD. All rights reserved.</p>
+                <p class="footer-credit">Website design by <a href="http://www.behance.net/vasege" target="_blank">Serge Vasil</a></p>
+                <p class="footer-disclaimer">Any reference to RENDERED and associated logos is for demonstration purposes only and is not intended to refer to any actual organization or event.</p>
+                <p class="footer-legal">&copy; 2016 Adobe Systems Incorporated. All rights reserved.</p>
             </div>
         </div>
     </footer>

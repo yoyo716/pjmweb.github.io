@@ -154,8 +154,10 @@ header {
   display: block;
 }
 .hero-title {
-  font-size: 5.2em;
+  font-size: 5em;
   margin-bottom: 1.5%;
+	line-height: 1;
+	letter-spacing: .3em;
   text-transform: uppercase;
 }
 .hero-date {
@@ -230,7 +232,10 @@ header {
   position: relative;
 }
 .artwork-piece figure {
-  position: relative;
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    min-height: 100%;
 }
 .artwork-piece figure figcaption {
   position: absolute;
@@ -295,13 +300,17 @@ header {
 }
 
 .artwork-3 .artwork-piece {
-  padding: 2% 18%;
-  background-image:-moz-linear-gradient( 135deg, rgb(201,37,44) 0%, rgb(241,90,34) 100%);
-  background-image: -webkit-linear-gradient( 135deg, rgb(201,37,44) 0%, rgb(241,90,34) 100%);
-  background-image: -ms-linear-gradient( 135deg, rgb(201,37,44) 0%, rgb(241,90,34) 100%);
+    /* [disabled]padding-top: 2%; */
+    /* [disabled]padding-right: 18%; */
+    /* [disabled]padding-left: 18%; */
+    /* [disabled]padding-bottom: 2%; */
+    background-image: -moz-linear-gradient( 135deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
+    background-image: -webkit-linear-gradient( 135deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
+    background-image: -ms-linear-gradient( 135deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
 }
 .artwork-3 .artwork-description {
-  background: #26223e;
+    background: #26223e;
+    text-align: left;
 }
 .artwork-3 .artwork-piece figure figcaption {
   right: 100%;
@@ -333,9 +342,9 @@ footer {
   margin-top: -3em;
   padding: 8.75em 0 2em;
   color: #fff;
-  background-image:-moz-linear-gradient( -45deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
-  background-image: -webkit-linear-gradient( -45deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
-  background-image: -ms-linear-gradient( -45deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
+  background-image:-moz-linear-gradient( -45deg, rgb(201,37,44) 0%, rgb(241,90,34) 100%);
+  background-image: -webkit-linear-gradient( -45deg, rgb(201,37,44) 0%, rgb(241,90,34) 100%);
+  background-image: -ms-linear-gradient( -45deg, rgb(201,37,44) 0%, rgb(241,90,34) 100%);
 }
 .footer-content {
   width: 80%;
@@ -357,12 +366,15 @@ footer {
   width: 4em;
   height: 4em;
   text-align: center;
-  border: 2px solid rgba(255,255,255,.3);
+  border: 0px solid rgba(255,255,255,.3);
   border-radius: 50%;
 }
 .footer-social li a:hover {
-  border-color: #fff;
-  background: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    /* [disabled]border-top-color: #fff; */
+    /* [disabled]background: #fff; */
 }
 .footer-social li a img {
   width: auto;
@@ -517,7 +529,10 @@ footer {
   letter-spacing: .35em;
 }
 .artwork-3 .artwork-piece {
-  padding: 3.5% 26%;
+    padding-top: 3.5%;
+    padding-right: 26%;
+    padding-left: 26%;
+    padding-bottom: 3.5%;
 }
 .artwork-3 .artwork-description {
   background: #26223e;
@@ -560,9 +575,9 @@ footer {
   }
   .hero-title {
     margin-bottom: 0;
-    letter-spacing: .65em;
+    letter-spacing: .3em;
     margin-left: .61em;
-    font-size: 8.4vw;
+    font-size: 8vw;
   }
   .hero-date span {
     display: inline;
@@ -625,7 +640,7 @@ footer {
   }
 	
   .artwork-3 .artwork-piece {
-    padding: 8% 0 8% 23.5%;
+    padding: 0% 0% 0% 0%;
   }
   .artwork-3 .artwork-description {
     background: #26223e;
@@ -656,7 +671,7 @@ footer {
     padding-top: 13%;
   }
   .hero-title {
-    letter-spacing: .85em;
+    letter-spacing: .3em;
     margin-left: .7em;
     font-size: 8.5vw;
   }

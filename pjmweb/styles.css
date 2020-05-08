@@ -2,15 +2,18 @@
 
 html,
 html * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-position: outside;
+    list-style-type: square;
 }
 
 body {
-  font-family: arial, sans-serif;
-  font-size: 3.3vw;
-  background: white;
+    font-family: arial, sans-serif;
+    font-size: 3.3vw;
+    background: white;
+    list-style-position: outside;
 }
 
 
@@ -260,6 +263,7 @@ header {
   text-align: center;
   color: #fff;
 }
+.artwork-description li {list-style-position: outside}
 .artwork-description p {
   opacity: .8;
 }
@@ -313,6 +317,29 @@ header {
     text-align: left;
 }
 .artwork-3 .artwork-piece figure figcaption {
+  right: 100%;
+  transform: rotate(90deg);
+  transform-origin: 100% 0;
+  text-align: right;
+  background: #ffb378;
+  top: 100%;
+}
+
+.artwork-4 .artwork-piece {
+    /* [disabled]padding-top: 2%; */
+    /* [disabled]padding-right: 18%; */
+    /* [disabled]padding-left: 18%; */
+    /* [disabled]padding-bottom: 2%; */
+    background-image: -moz-linear-gradient( 135deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
+    background-image: -webkit-linear-gradient( 135deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
+    background-image: -ms-linear-gradient( 135deg, rgb(0,0,0) 0%, rgb(102,102,102) 100%);
+}
+.artwork-4 .artwork-description {
+    background: #99ccff;
+    text-align: left;
+	color: #26223E;
+}
+.artwork-4 .artwork-piece figure figcaption {
   right: 100%;
   transform: rotate(90deg);
   transform-origin: 100% 0;
@@ -415,9 +442,10 @@ footer {
 
 
 
-@media (min-width: 768px) {
+@media (min-width:768px){
   body {
     font-size: 100%;
+    list-style-position: outside;
   }
 
   header {
@@ -500,7 +528,7 @@ footer {
 }
 
 .intro {
-  padding: 9em 6em 9.5em;
+    padding: 9em 6em 9.5em;
 }
 .intro p {
   font-size: 2.25em;
@@ -535,6 +563,17 @@ footer {
     padding-bottom: 3.5%;
 }
 .artwork-3 .artwork-description {
+  background: #26223e;
+}
+	
+.artwork-4 .artwork-piece {
+    padding-top: 3.5%;
+    padding-right: 26%;
+    padding-left: 26%;
+    padding-bottom: 3.5%;
+    float: right;
+}
+.artwork-4 .artwork-description {
   background: #26223e;
 }
 footer {
@@ -645,6 +684,13 @@ footer {
   .artwork-3 .artwork-description {
     background: #26223e;
   }
+	.artwork-4 .artwork-piece {
+    padding: 0% 0% 0% 0%;
+  }
+  .artwork-4 .artwork-description {
+    background: #99ccff;
+	color: #26223E;
+  }
   footer {
     margin-top: -3.5em;
     padding-top: 10em;
@@ -719,6 +765,12 @@ footer {
     background: #26223e;
   }
 
+.artwork-4 .artwork-piece {
+    padding: 2.75% 2.5% 1% 20.25%;
+  }
+  .artwork-4 .artwork-description {
+    background: #99ccff;
+  }
 
   footer {
     margin-top: -3em;

@@ -581,7 +581,7 @@ footer {
   line-height: 2.2;
   margin-bottom: 2.25%;
   padding-top: 24.2%;
-  letter-spacing: .39em;
+  letter-spacing: .1em;
 }
 .hero-title {
 		font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
@@ -683,7 +683,7 @@ footer {
 	  font-family: 'noto_sans_thaicondensed', sans-serif;
     margin-bottom: -0.5%;
     padding-top: 15.5%;
-    letter-spacing: .16em;
+    letter-spacing: .1em;
   }
   .hero-leadin span {
     display: inline;
@@ -795,7 +795,7 @@ footer {
     padding-top: 13%;
   }
   .hero-title {
-	  	font-family: 'noto_sans_thaicondensed', sans-serif;
+	  	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
     letter-spacing: .3em;
     margin-left: .7em;
     font-size: 8.5vw;

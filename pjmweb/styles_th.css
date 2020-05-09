@@ -592,7 +592,7 @@ footer {
 }
 .hero-date {
   line-height: 2.75;
-  letter-spacing: .35em;
+  letter-spacing: .1em;
 }
 .hero-arrow {
   bottom: 4.25%;
@@ -791,8 +791,9 @@ footer {
     transform: scale(1.15);
   }
   .hero-leadin {
-	  font-family: 'noto_sans_thaicondensed', sans-serif;
+	font-family: 'noto_sans_thaicondensed', sans-serif;
     padding-top: 13%;
+	letter-spacing: .1em;
   }
   .hero-title {
 	  	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;

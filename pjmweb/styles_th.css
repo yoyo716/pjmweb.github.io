@@ -346,7 +346,7 @@ header {
   font-size: 1.75em;
   font-weight: 100;
   margin-bottom: 1.45em;
-  letter-spacing: .36em;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 .artwork-description p {
@@ -606,7 +606,7 @@ footer {
 .intro p {
   font-size: 2.25em;
   line-height: 2;
-  letter-spacing: .32em;
+  letter-spacing: .01em;
 }
 .intro-text {
   width: 37em;
@@ -627,7 +627,7 @@ footer {
 .artwork-title {
   font-size: 2.4em;
   margin-bottom: .6em;
-  letter-spacing: .35em;
+  letter-spacing: .1em;
 }
 .artwork-3 .artwork-piece {
     padding-top: 3.5%;

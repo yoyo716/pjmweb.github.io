@@ -552,29 +552,27 @@ footer {
   padding: 5.85em 11em 6.975em;
 }
 .artwork-title {
-  font-size: 2.4em;
-  margin-bottom: .6em;
-  letter-spacing: .35em;
+    font-size: 2.4em;
+    margin-bottom: .6em;
+    letter-spacing: 0.15em;
 }
 .artwork-3 .artwork-piece {
-    padding-top: 3.5%;
-    padding-right: 26%;
-    padding-left: 26%;
-    padding-bottom: 3.5%;
+    /* [disabled]padding-top: 3.5%; */
+    /* [disabled]padding-right: 26%; */
+    /* [disabled]padding-left: 26%; */
+    /* [disabled]padding-bottom: 3.5%; */
 }
 .artwork-3 .artwork-description {
   background: #26223e;
 }
 .artwork-4 .artwork-piece {
-    padding-top: 3.5%;
-    padding-right: 26%;
-    padding-left: 26%;
-    padding-bottom: 3.5%;
-    float: right;
+    /* [disabled]padding-top: 3.5%; */
+    /* [disabled]padding-right: 26%; */
+    /* [disabled]padding-left: 26%; */
+    /* [disabled]padding-bottom: 3.5%; */
 }
 .artwork-4 .artwork-description {
   background: #99ccff;
-		color: #26223E;
 }
 footer {
   margin-top: -2.5em;

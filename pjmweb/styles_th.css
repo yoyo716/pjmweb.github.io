@@ -322,7 +322,7 @@ header {
   font-size: .75em;
   font-weight: bold;
   line-height: 1;
-  letter-spacing: .04em;
+  letter-spacing: .01em;
   color: #fff;
 }
 .artwork-piece figure img {
@@ -346,7 +346,7 @@ header {
   font-size: 1.75em;
   font-weight: 100;
   margin-bottom: 1.45em;
-  letter-spacing: .1em;
+  letter-spacing: .01em;
   text-transform: uppercase;
 }
 .artwork-description p {
@@ -584,7 +584,7 @@ footer {
   letter-spacing: .1em;
 }
 .hero-title {
-		font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
+	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
 	font-size: 12.4vw;
 	margin-bottom: 4.85%;
 	letter-spacing: .225em;
@@ -627,29 +627,25 @@ footer {
 .artwork-title {
   font-size: 2.4em;
   margin-bottom: .6em;
-  letter-spacing: .1em;
+  letter-spacing: .01em;
 }
 .artwork-3 .artwork-piece {
-    padding-top: 3.5%;
-    padding-right: 26%;
-    padding-left: 26%;
-    padding-bottom: 3.5%;
+    /* [disabled]padding-top: 3.5%; */
+    /* [disabled]padding-right: 26%; */
+    /* [disabled]padding-left: 26%; */
+    /* [disabled]padding-bottom: 3.5%; */
 }
 .artwork-3 .artwork-description {
   background: #26223e;
-}
-	
+}	
 .artwork-4 .artwork-piece {
-    padding-top: 3.5%;
-    padding-right: 26%;
-    padding-left: 26%;
-    padding-bottom: 3.5%;
-    float: right;
+    /* [disabled]padding-top: 3.5%; */
+    /* [disabled]padding-right: 26%; */
+    /* [disabled]padding-left: 26%; */
+    /* [disabled]padding-bottom: 3.5%; */
 }
 .artwork-4 .artwork-description {
   background: #99ccff;
-	    text-align: left;
-		color: #26223E;
 }
 footer {
   margin-top: -2.5em;
@@ -747,7 +743,9 @@ footer {
     margin-bottom: 1.9em;
   }
   .artwork-title {
-    line-height: 1.5;
+	font-family: 'noto_sans_thaicondensed', sans-serif;
+    line-height: 1.1;
+	letter-spacing: .01em;
     max-width: 9em;
     margin-bottom: .5em;
   }

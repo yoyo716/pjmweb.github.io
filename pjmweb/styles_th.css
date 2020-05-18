@@ -217,30 +217,31 @@ header {
   text-decoration: none;
 }
 .hero-leadin {
-	font-family: 'noto_sans_thaicondensed', sans-serif;
-  font-size: 1.5em;
-  font-weight: 100;
-  line-height: 1.55;
-  margin-bottom: -.1em;
-  padding-top: 6.5em;
-  letter-spacing: .1em;
+    font-family: 'noto_sans_thaicondensed', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 1.55;
+    margin-bottom: -.1em;
+    padding-top: 6.5em;
+    letter-spacing: 0.1em;
 }
 .hero-leadin span {
   display: block;
 }
 .hero-title {
-	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
-  font-size: 5em;
-  margin-bottom: 1.5%;
-	line-height: 1;
-	letter-spacing: .3em;
-  text-transform: uppercase;
+    font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
+    font-size: 4em;
+    margin-bottom: 1.5%;
+    line-height: 1;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+    letter-spacing: 0.01em;
 }
 .hero-date {
-  font-size: 1.5em;
-  font-weight: 100;
-  line-height: 1.6;
-  letter-spacing: .1em;
+    font-size: 1.4em;
+    font-weight: 100;
+    line-height: 1em;
+    letter-spacing: 0.01em;
 }
 .hero-date span {
   display: block;
@@ -576,23 +577,22 @@ footer {
   height: 119vw;
 }
 .hero-leadin {
-	font-family: 'noto_sans_thaicondensed', sans-serif;
-  font-size: 2em;
-  line-height: 2.2;
-  margin-bottom: 2.25%;
-  padding-top: 24.2%;
-  letter-spacing: .1em;
+    font-family: 'noto_sans_thaicondensed', sans-serif;
+    font-size: 2em;
+    line-height: 2.2;
+    margin-bottom: 2.25%;
+    padding-top: 24.2%;
+    /* [disabled]letter-spacing: .1em; */
 }
 .hero-title {
-	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
-	font-size: 12.4vw;
-	margin-bottom: 4.85%;
-	letter-spacing: .225em;
-	margin-left: .25em;
+    font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
+    font-size: 9vw;
+    margin-bottom: 4.85%;
+    letter-spacing: 0.01em;
 }
 .hero-date {
-  line-height: 2.75;
-  letter-spacing: .1em;
+    line-height: 2.75;
+    letter-spacing: 0.01em;
 }
 .hero-arrow {
   bottom: 4.25%;
@@ -676,21 +676,28 @@ footer {
     height: 53.5vw;
   }
   .hero-leadin {
-	  font-family: 'noto_sans_thaicondensed', sans-serif;
+    font-family: 'noto_sans_thaicondensed', sans-serif;
     margin-bottom: -0.5%;
     padding-top: 15.5%;
-    letter-spacing: .1em;
+    /* [disabled]letter-spacing: .1em; */
   }
   .hero-leadin span {
     display: inline;
   }
   .hero-title {
-	  	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
+    font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
     margin-bottom: 0;
-    letter-spacing: .3em;
-    margin-left: .61em;
-    font-size: 8vw;
+    margin-left: 0.6em;
+    font-size: 7vw;
+    margin-right: 0.6em;
+    letter-spacing: 0.01em;
   }
+	.hero-date {
+    font-size: 1.7em;
+    font-weight: 100;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+	}
   .hero-date span {
     display: inline;
   }
@@ -789,16 +796,23 @@ footer {
     transform: scale(1.15);
   }
   .hero-leadin {
-	font-family: 'noto_sans_thaicondensed', sans-serif;
+    font-family: 'noto_sans_thaicondensed', sans-serif;
     padding-top: 13%;
-	letter-spacing: .1em;
+    /* [disabled]letter-spacing: .1em; */
   }
   .hero-title {
-	  	font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
-    letter-spacing: .3em;
+    font-family: 'noto_sans_thaicondensed', 'acumin-pro-extra-condensed', sans-serif;
+    letter-spacing: 0.01em;
     margin-left: .7em;
     font-size: 8.5vw;
+    margin-right: 0.7em;
   }
+	.hero-date {
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 2;
+    letter-spacing: 0.01em;
+	}
   .hero-arrow {
     bottom: 4%;
     width: .5em;

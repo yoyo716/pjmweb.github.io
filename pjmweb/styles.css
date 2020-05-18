@@ -145,13 +145,14 @@ header {
   text-decoration: none;
 }
 .hero-leadin {
-  font-size: 1.5em;
-  font-weight: 100;
-  line-height: 1.55;
-  margin-bottom: -.35em;
-  padding-top: 6.5em;
-  letter-spacing: .3em;
-  text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 1.55;
+    margin-bottom: -.35em;
+    padding-top: 6.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    word-spacing: 0.3em;
 }
 .hero-leadin span {
   display: block;
@@ -160,15 +161,16 @@ header {
   font-size: 5em;
   margin-bottom: 1.5%;
 	line-height: 1;
-	letter-spacing: .3em;
+	letter-spacing: .1em;
   text-transform: uppercase;
 }
 .hero-date {
-  font-size: 1.5em;
-  font-weight: 100;
-  line-height: 1.6;
-  letter-spacing: .3em;
-  text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    word-spacing: 0.3em;
 }
 .hero-date span {
   display: block;
@@ -198,14 +200,14 @@ header {
 }
 
 .intro p {
-  font-family: 'acumin-pro-extra-condensed', sans-serif;
-  font-size: 1.5em;
-  line-height: 1.685;
-  position: relative;
-  z-index: 200;
-  text-align: center;
-  letter-spacing: .325em;
-  text-transform: uppercase;
+    font-family: 'acumin-pro-extra-condensed', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.685;
+    position: relative;
+    z-index: 200;
+    text-align: center;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
 }
 .intro-text {
   position: relative;
@@ -505,21 +507,25 @@ footer {
   height: 119vw;
 }
 .hero-leadin {
-  font-size: 2em;
-  line-height: 2.2;
-  margin-bottom: 2.25%;
-  padding-top: 24.2%;
-  letter-spacing: .39em;
+    font-size: 2em;
+    line-height: 2.2;
+    margin-bottom: 2.25%;
+    padding-top: 24.2%;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
 }
 .hero-title {
-	font-size: 12.4vw;
-	margin-bottom: 4.85%;
-	letter-spacing: .225em;
-	margin-left: .25em;
+    font-size: 12.4vw;
+    margin-bottom: 4.85%;
+    letter-spacing: 0.1em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
 }
 .hero-date {
-  line-height: 2.75;
-  letter-spacing: .35em;
+    line-height: 2.75;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
+    font-size: 2em;
 }
 .hero-arrow {
   bottom: 4.25%;
@@ -531,9 +537,9 @@ footer {
     padding: 9em 6em 9.5em;
 }
 .intro p {
-  font-size: 2.25em;
-  line-height: 2;
-  letter-spacing: .32em;
+    font-size: 2.25em;
+    line-height: 2;
+    letter-spacing: 0.1px;
 }
 .intro-text {
   width: 37em;
@@ -605,16 +611,18 @@ footer {
   .hero-leadin {
     margin-bottom: -1.5%;
     padding-top: 15.5%;
-    letter-spacing: .36em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
   }
   .hero-leadin span {
     display: inline;
   }
   .hero-title {
     margin-bottom: 0;
-    letter-spacing: .3em;
-    margin-left: .61em;
+    letter-spacing: 0.1em;
+    margin-left: 0.6em;
     font-size: 8vw;
+    margin-right: 0.6em;
   }
   .hero-date span {
     display: inline;
@@ -713,9 +721,11 @@ footer {
   }
   .hero-leadin {
     padding-top: 13%;
+    letter-spacing: 0.1em;
+    word-spacing: 0.3em;
   }
   .hero-title {
-    letter-spacing: .3em;
+    letter-spacing: 0.1px;
     margin-left: .7em;
     font-size: 8.5vw;
   }

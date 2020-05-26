@@ -207,7 +207,6 @@ header {
     z-index: 200;
     text-align: center;
     letter-spacing: 0.1px;
-    text-transform: capitalize;
 }
 .intro-text {
   position: relative;

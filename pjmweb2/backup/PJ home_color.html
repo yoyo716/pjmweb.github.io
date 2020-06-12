@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>P.J. Metal House 2000</title>
+
+    <script src="https://use.typekit.net/kxf0iwn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header>
+      <a class="site-logo">
+          <img class="site-logo-white" src="images/logo-white.png">
+          <img class="site-logo-dark" src="images/logo-dark.png">
+      </a>
+      <button class="site-nav-open">
+          <img src="images/menu-hamburger.png">
+      </button>
+        <nav class="site-nav">
+            <button class="site-nav-close">
+                <img src="images/menu-close.png">
+            </button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Services</a></li>
+                <li><a href="#tickets">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-leadin">P.J. Metal House 2000</h2>
+                <h1 class="hero-title">Metal Expert</h1>
+                <h3 class="hero-date">WHOLESALER AND RETAILER</h3>
+            </div>
+            <a href="#" class="hero-arrow">
+                <img src="images/down-arrow.png" class="hero-arrow"/>
+            </a>
+            <video autoplay loop poster="images/paintwave.jpg">
+                <source src="videos/paintwave.mp4" type="video/mp4; codecs=&quot;h264,aac&quot;">
+                <source src="videos/paintwave.webm" type="video/webm; codecs=&quot;vp8,vorbis&quot;">
+                <source src="videos/paintwave.ogg" type="video/ogg; codecs=&quot;theora,vorbis&quot;">
+            </video>
+        </section>
+
+        <!-- Stamp -->
+        <img id="stamp" src="images/stamp.png"/>
+
+
+        <!-- Intro -->
+        <section class="intro" id="intro">
+            <div class="intro-text">
+                <p>STAINLESS STEEL SHEETS/ PLATES/ PROFILES JOB SHOP SERVICES INCLUDING LASER/ PLASMA/ FLAME CUTTINGS, SHEARING, BENDING, ROLLING, WELDING AND ASSEMBLY ACCORDING TO YOUR REQUIREMENTS.</p>
+            </div>
+        </section>
+
+
+        <!-- Artwork -->
+        <section class="artworks">
+
+            <article class="artwork artwork-3">
+                <div class="artwork-piece">
+                    <a href="https://www.seescopestudio.com" target="_blank">
+                        <figure>
+                            <figcaption>
+                                <h2 class="artwork-artistName">Custom Made Services</h2>
+                            </figcaption>
+                            <img src="images/laser.jpg">
+                        </figure>
+                    </a>
+                </div>
+                <div class="artwork-description">
+					<h2 class="artwork-title">CUSTOM MADE SERVICES</h2>
+                    <p><li>Shearing Service</li>
+					<li>Bending Service</li>
+					<li>Flame Cutting Service</li>
+					<li>Plasma Cutting Service</li>
+					<li>Laser Cutting</li>
+					<li>Rolling Service</li>
+					<li>Bandsaw Cutting Service</li>
+					<li>V-Cut Service</li>
+					<li>Welding/ Assembly Service</li>
+					<li>Laser Marking Service</li></p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-facebook.png">
+                        <img class="social-hover" src="images/social-facebook-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social_line.png">
+                        <img class="social-hover" src="images/social_line-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/icon-email.png">
+                        <img class="social-hover" src="images/icon-email-hover.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by <a href="http://www.seescopestudio.com" target="_blank">See Scope Design Studio</a></p>
+                <p class="footer-disclaimer">12/1-2 Moo 10, Teparak Rd. Km. 15, <span>Bangpla,Bangplee, Samutprakarn 10540, Thailand</span><br>
+					Tel : 0-2752-3300 (Auto) 0-2312-1102, 0-2312-2413 <br> Fax : 0-2752-4164</p>
+                <p class="footer-legal">&copy; 2020 P.J.METAL HOUSE CO., LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+
+        // Site Nav
+        $(".site-nav-open").on("click", function(){
+            $(".site-nav").show();
+        });
+        $(".site-nav-close").on("click", function(){
+            $(".site-nav").hide();
+        });
+
+        // Hero Arrow
+        $(".hero-arrow").on("click", function(event){
+            event.preventDefault();
+            var introPosition = $("#intro").offset().top;
+            $('body,html').animate({
+                scrollTop: introPosition
+            }, 400);
+        });
+
+        // Scroll Events
+        $(window).on("load resize scroll", function(){
+            // Light/Dark Header
+            var bodyPosition        = $("body").scrollTop(),
+                lightSection1       = $("#intro"),
+                lightSection1Top    = lightSection1.offset().top,
+                lightSection1Bottom = lightSection1Top + lightSection1.outerHeight(),
+                lightSection2       = $(".artwork-2"),
+                lightSection2Top    = lightSection2.offset().top,
+                lightSection2Bottom = lightSection2Top + lightSection2.outerHeight(),
+                lightSection3       = $(".contact"),
+                lightSection3Top    = lightSection3.offset().top,
+                lightSection3Bottom = lightSection3Top + lightSection3.outerHeight();
+            if (
+                ( bodyPosition > lightSection1Top && bodyPosition < lightSection1Bottom ) ||
+                ( bodyPosition > lightSection2Top && bodyPosition < lightSection2Bottom ) ||
+                ( bodyPosition > lightSection3Top && bodyPosition < lightSection3Bottom )
+            ) {
+                $("header").addClass("dark");
+            } else {
+                $("header").removeClass("dark");
+            }
+            // Stamp
+            var heroBottom       = $(".hero").outerHeight(),
+                stampOffset      = $("#stamp").outerHeight() + 50;
+                stampPos         = heroBottom - stampOffset,
+                stampChangePoint = ($("#intro").offset().top + $("#intro").outerHeight()) - stampOffset;
+            if ( bodyPosition + stampPos >= stampChangePoint)   {
+                $("#stamp").removeClass("fixed").css("top", stampChangePoint);
+            } else {
+                $("#stamp").addClass("fixed").css("top", stampPos);
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>

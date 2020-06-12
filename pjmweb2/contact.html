@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>P.J. Metal House 2000</title>
+
+    <script src="https://use.typekit.net/kxf0iwn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header>
+      <a class="site-logo">
+          <img class="site-logo-white" src="images/logo-white.png">
+          <img class="site-logo-dark" src="images/logo-dark.png">
+      </a>
+      <button class="site-nav-open">
+          <img src="images/menu-hamburger.png">
+      </button>
+        <nav class="site-nav">
+            <button class="site-nav-close">
+                <img src="images/menu-close.png">
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+				<li><a href="contact_th.html">| TH |</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-leadin"><br></h2>
+                <h1 class="hero-title">P.J. Metal House 2000</h1>
+                <h3 class="hero-date"></h3>
+            </div>
+            <a href="#" class="hero-arrow">
+                <img src="images/down-arrow.png" class="hero-arrow"/>
+            </a>
+            <video autoplay loop poster="images/banner_contact.jpg">
+                <source src="#" type="video/mp4; codecs=&quot;h264,aac&quot;">
+                <source src="#" type="video/webm; codecs=&quot;vp8,vorbis&quot;">
+                <source src="#" type="video/ogg; codecs=&quot;theora,vorbis&quot;">
+            </video>
+        </section>
+
+        <!-- Stamp -->
+        <img id="stamp" src="images/stamp.png"/>
+
+
+        <!-- Intro -->
+        <section class="intro" id="intro">
+            <div class="intro-text">
+				<a href="https://www.google.com/maps/place/13%C2%B035'04.7%22N+100%C2%B043'43.1%22E/@13.584625,100.7264403,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d13.584625!4d100.728629" target="_blank"> <img src="images/GG Map.png" alt="P.J. Metal House Google Map"/>
+				</a>
+				<h7>Click image to see google map</h7>
+            </div>
+        </section>
+
+
+        <!-- Artwork -->
+        <section class="artworks">
+
+            <article class="artwork artwork-3">
+                <div class="artwork-piece">
+                        <figure>
+                            <figcaption>
+                                <h2 class="artwork-artistName">P.J. Metal House Map</h2>
+                            </figcaption>
+                            <img src="images/Map1.jpg">
+                        </figure>
+                </div>
+                <div class="artwork-description">
+					<h2 class="artwork-title">P.J. METAL HOUSE (2000) CO., LTD.</h2>
+                    <p>24/9 Moo 10, Soi Bangpla 8, Teparak Rd., Bangpla, Bangplee, Samutprakarn 10540<br>
+						Tel: 0-2752-3300 (Auto)<br>
+						Fax: 0-2752-4164<br>
+						E-mail: <a href="mailto:sales@pjm2000.com">sales@pjm2000.com</a></p>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-facebook.png">
+                        <img class="social-hover" src="images/social-facebook-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social_line.png">
+                        <img class="social-hover" src="images/social_line-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:sales@pjm2000.com">
+                        <img class="social-default" src="images/icon-email.png">
+                        <img class="social-hover" src="images/icon-email-hover.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by <a href="http://www.seescopestudio.com" target="_blank">See Scope Design Studio</a></p>
+                <p class="footer-disclaimer">24/9 Moo 10, Soi Bangpla 8, Teparak Rd., <span>Bangpla, Bangplee, Samutprakarn 10540, Thailand</span><br>
+					Tel : 0-2752-3300 (Auto) 0-2312-1102, 0-2312-2413 <br> Fax : 0-2752-4164</p>
+                <p class="footer-legal">&copy; 2020 P.J.METAL HOUSE CO., LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+
+        // Site Nav
+        $(".site-nav-open").on("click", function(){
+            $(".site-nav").show();
+        });
+        $(".site-nav-close").on("click", function(){
+            $(".site-nav").hide();
+        });
+
+        // Hero Arrow
+        $(".hero-arrow").on("click", function(event){
+            event.preventDefault();
+            var introPosition = $("#intro").offset().top;
+            $('body,html').animate({
+                scrollTop: introPosition
+            }, 400);
+        });
+
+        // Scroll Events
+        $(window).on("load resize scroll", function(){
+            // Light/Dark Header
+            var bodyPosition        = $("body").scrollTop(),
+                lightSection1       = $("#intro"),
+                lightSection1Top    = lightSection1.offset().top,
+                lightSection1Bottom = lightSection1Top + lightSection1.outerHeight(),
+                lightSection2       = $(".artwork-2"),
+                lightSection2Top    = lightSection2.offset().top,
+                lightSection2Bottom = lightSection2Top + lightSection2.outerHeight(),
+                lightSection3       = $(".contact"),
+                lightSection3Top    = lightSection3.offset().top,
+                lightSection3Bottom = lightSection3Top + lightSection3.outerHeight();
+            if (
+                ( bodyPosition > lightSection1Top && bodyPosition < lightSection1Bottom ) ||
+                ( bodyPosition > lightSection2Top && bodyPosition < lightSection2Bottom ) ||
+                ( bodyPosition > lightSection3Top && bodyPosition < lightSection3Bottom )
+            ) {
+                $("header").addClass("dark");
+            } else {
+                $("header").removeClass("dark");
+            }
+            // Stamp
+            var heroBottom       = $(".hero").outerHeight(),
+                stampOffset      = $("#stamp").outerHeight() + 50;
+                stampPos         = heroBottom - stampOffset,
+                stampChangePoint = ($("#intro").offset().top + $("#intro").outerHeight()) - stampOffset;
+            if ( bodyPosition + stampPos >= stampChangePoint)   {
+                $("#stamp").removeClass("fixed").css("top", stampChangePoint);
+            } else {
+                $("#stamp").addClass("fixed").css("top", stampPos);
+            }
+        });
+
+
+    </script>
+
+</body>
+</html>
